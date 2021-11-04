@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class redRobin {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		NumberFormat money;
 		money = NumberFormat.getCurrencyInstance();
@@ -13,8 +14,7 @@ public class redRobin {
 		double subTotal = entree * taxRate;
 		double qualityOfService = (Math.random());
 
-		Scanner kb;
-		kb = new Scanner(System.in);
+		Scanner kb = new Scanner(System.in);
 
 		System.out.println("Your Subtotal is " + money.format(entree)
 				+ ". Your satisfaction with the quality of service is " + percentage.format(qualityOfService) + ".");
