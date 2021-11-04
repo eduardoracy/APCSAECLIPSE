@@ -23,12 +23,13 @@ public class redRobin {
 		double tip = tipPercentage + entree;
 		double total = tip + subTotal;
 		double outputTip = tipPercentage * 10;
+		
 		System.out.println("");
-		System.out.println("Your check:");
+		System.out.println("Thank you for your visit here is your check:");
 		System.out.println("Entree: " + money.format(entree));
 		System.out.println("SubTotal: " + money.format(subTotal));
 		System.out.println("Gratuity: " + money.format(tip) + " (" + percentage.format(outputTip) + ")");
 		System.out.println("Total: " + money.format(total));
-
+		
 	}
 }
