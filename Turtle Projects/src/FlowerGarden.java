@@ -1,5 +1,6 @@
 public class FlowerGarden {
 
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 
 		FlowerMaker sergio;
