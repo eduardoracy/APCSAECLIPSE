@@ -4,38 +4,19 @@ public class FlowerGarden {
 
 		FlowerMaker sergio;
 		sergio = new FlowerMaker();
-		FlowerMaker arthur;
-		arthur = new FlowerMaker();
-		FlowerMaker claudia;
-		claudia = new FlowerMaker();
-		FlowerMaker laila;
-		laila = new FlowerMaker();
 
-		arthur.daySky();
-
-		sergio.GroundAndObjects();
-
-		claudia.SunflowerGarden();
+		sergio.originDaySky();
+		sergio.originLandscape();
 
 		sergio.sleep(10000);
 
-		arthur.skyLocationReset();
-		arthur.nightSky();
+		sergio.originNightSky();
+		sergio.originLandscape();
 
-		laila.GroundAndObjects();
-		
-		//claudia.SunflowerGardenLocationReset();
-		claudia.SunflowerGarden();
+		sergio.sleep(10000);
 
-		/*
-		 * sergio.sleep(10000); 
-		 * arthur.skyLocationReset(); 
-		 * arthur.daySkyReset();
-		 * 
-		 * sergio.drawHills(); 
-		 * sergio.GroundAndObjects();
-		 * 
-		 * claudia.SunflowerGarden();
-		 */
+		sergio.originDaySky();
+		sergio.originLandscape();
+
 	}
 }

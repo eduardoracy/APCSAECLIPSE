@@ -50,4 +50,4 @@ public class SmartTurtle extends Turtle {
 		paint(120,50);
 		
 	}
-}
+}	

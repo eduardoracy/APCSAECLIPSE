@@ -16,18 +16,18 @@ public abstract class Turtlet extends Object
 	               YELLOW = Color.yellow,    PINK = Color.pink,
 	               ORANGE = Color.orange,    GREEN = Color.green,
 	               MAGENTA = Color.magenta,  WHITE = Color.white,
-				SKYBLUE = new Color(135,206,235), 
-				GRASSGREEN = new Color(86,125,70),
-				ff2bb4 = new Color(255,43,180),
-				CONSTRUCTIONCONEORANGE = new Color(255,103,0),
-				OAKBROWN = new Color(120,81,45),
-				SUNFLOWERYELLOW = new Color(255,218,3),
-				PLASCONFLOWERSTEMGREEN = new Color(0,108,0),
-				CHRYSLERCLOUDGREY = new Color(193,199,189),
-				SUNYELLOW = new Color (250,253,15),
-				NIGHTSKYCETACEANBLUE = new Color(7,11,52),
-				NEROLACDARKCLOUDGREY = new Color(157,150,147),
-				MOONWHITE = new Color(244,246,240);
+	               SKYBLUE = new Color(135,206,235), 
+	               GRASSGREEN = new Color(86,125,70),
+	               ff2bb4 = new Color(255,43,180),
+	               CONSTRUCTIONCONEORANGE = new Color(255,103,0),
+	               OAKBROWN = new Color(120,81,45),
+	               SUNFLOWERYELLOW = new Color(255,218,3),
+	               PLASCONFLOWERSTEMGREEN = new Color(0,108,0),
+	               CHRYSLERCLOUDGREY = new Color(193,199,189),
+	               SUNYELLOW = new Color (250,253,15),
+	               NIGHTSKYCETACEANBLUE = new Color(7,11,52),
+	               NEROLACDARKCLOUDGREY = new Color(157,150,147),
+	               MOONWHITE = new Color(244,246,240);
 	
 	
 	private static java.awt.Graphics thePage;
