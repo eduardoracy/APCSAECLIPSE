@@ -12,7 +12,7 @@ public class redRobin {
 		double entree = (Math.random() * 26 + 5);
 		double subTotal = entree * taxRate;
 		double qualityOfService = (Math.random());
-		String test;
+
 		Scanner kb;
 		kb = new Scanner(System.in);
 
@@ -29,6 +29,6 @@ public class redRobin {
 		System.out.println("SubTotal: " + money.format(subTotal));
 		System.out.println("Gratuity: " + money.format(tip) + " (" + percentage.format(outputTip) + ")");
 		System.out.println("Total: " + money.format(total));
-//===
+
 	}
-}//==========================
+}

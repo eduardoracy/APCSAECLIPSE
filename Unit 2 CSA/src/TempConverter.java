@@ -1,23 +1,60 @@
 import java.util.Scanner;
 
 public class TempConverter {
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 
-		Scanner kb = new Scanner(System.in);
+		Scanner kb; 
+		kb = new Scanner(System.in);
+		System.out.print("What would you like to convert? ");
+		String inputUnit = kb.nextLine();
+		String baseUnit = null;
 
-		// Part A
+		if (inputUnit.contains("c")) {
+			baseUnit = "Celcius";
+		} else if (inputUnit.contains("k")) {
+			baseUnit = "Kelvin";
+		} else if (inputUnit.contains("f")) {
+			baseUnit = "Fahrenheit";
+		}
 
-		// input
-		System.out.print("Enter a temperature in Fahrenheit: ");
-		int tempFah = kb.nextInt();
+		System.out.print("What would you like to convert " + baseUnit + " to? ");
+		String outputUnit = kb.nextLine();
+		String finalUnit = null;
 
-		// calculations
-		double tempCelcius = (tempFah - 32.0) * (5.0 / 9.0);
+		if (outputUnit.contains("c")) {
+			finalUnit = "Celcius";
+		} else if (outputUnit.contains("k")) {
+			finalUnit = "Kelvin";
+		} else if (outputUnit.contains("f")) {
+			finalUnit = "Fahrenheit";
+		}
 
-		// output
-		System.out.println("Your temperature in Celcius" + tempCelcius);
+		System.out.print("Enter a temperature in " + finalUnit + ": ");
+		double temp = kb.nextDouble();
+		double tempFinal = 0;
 
-		// Part B
+		if (inputUnit.contains("c") && outputUnit.contains("c")) {
+			tempFinal = temp;
+		} else if (inputUnit.contains("c") && outputUnit.contains("k")) {
+			tempFinal = temp + 273.15;
+		} else if (inputUnit.contains("c") && outputUnit.contains("f")) {
+			tempFinal = (temp * 9 / 5) + 32;
+		} else if (inputUnit.contains("k") && outputUnit.contains("c")) {
+			tempFinal = temp - 273.15;
+		} else if (inputUnit.contains("k") && outputUnit.contains("k")) {
+			tempFinal = temp;
+		} else if (inputUnit.contains("k") && outputUnit.contains("f")) {
+			tempFinal = (temp - 273.15) * 9 / 5 + 32;
+		} else if (inputUnit.contains("f") && outputUnit.contains("c")) {
+			tempFinal = (temp - 32) * 5 / 9;
+		} else if (inputUnit.contains("f") && outputUnit.contains("k")) {
+			tempFinal = (temp - 32) * 5 / 9 + 273.15;
+		} else if (inputUnit.contains("f") && outputUnit.contains("f")) {
+			tempFinal = temp;
+		}
+		
+		System.out.println(temp + " " + baseUnit + " in " + finalUnit + " is " + tempFinal);
 
 	}
 
