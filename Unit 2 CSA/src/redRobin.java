@@ -29,6 +29,6 @@ public class redRobin {
 		System.out.println("SubTotal: " + money.format(subTotal));
 		System.out.println("Gratuity: " + money.format(tip) + " (" + percentage.format(outputTip) + ")");
 		System.out.println("Total: " + money.format(total));
-
+//===
 	}
 }//==========================
