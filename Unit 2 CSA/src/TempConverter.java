@@ -30,7 +30,7 @@ public class TempConverter {
 			finalUnit = "Fahrenheit";
 		}
 
-		System.out.print("Enter a temperature in " + finalUnit + ": ");
+		System.out.print("Enter a temperature in " + baseUnit + ": ");
 		double temp = kb.nextDouble();
 		double tempFinal = 0;
 
